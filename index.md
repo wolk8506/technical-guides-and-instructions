@@ -2,9 +2,9 @@
 
 ### [Charles](./charles/charles.md)
 
-### [Docker](./charles/charles.md)
+### [Docker](./docker/docker.md)
 
-### [Oh My Posh](./charles/charles.md)
+### [Oh My Posh](./oh-my-posh/oh-my-posh.md)
 
 ### [diskpart](./charles/charles.md)
 

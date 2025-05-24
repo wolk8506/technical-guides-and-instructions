@@ -17,6 +17,7 @@
     - [**Интерфейс**](#интерфейс)
   - [**Функциональность Charles Proxy**](#функциональность-charles-proxy)
     - [**Включение SSL Proxying**](#включение-ssl-proxying)
+      - [**Включение Proxy**](#включение-proxy)
       - [**Focus**](#focus)
       - [**SSL Proxying**](#ssl-proxying)
       - [**Дополнительный функционал**](#дополнительный-функционал)
@@ -53,7 +54,7 @@
 Снифферы - это инструменты, позволяющие перехватывать, анализировать и модернизировать все запросы, которые через них проходят. Они полезны, когда из потока нужно извлечь какие-либо сведения или создать нужный ответ сервера. Так можно проводить модульное тестирование продукта, в котором есть и бэк, и фронт, и разные команды со своей версионностью.
 
 <div align="center">
-  <img src="./images/about.png" alt="Рисунок 1">
+  <img src="./images/about.png" alt="Рисунок">
   <p>Рисунок 1</p>
 </div>
 
@@ -68,22 +69,22 @@ Charles Web Debugging Proxy - это инструмент мониторинга
 1. Загрузите установочный файл с Web сайта - [Charles Web Debugging Proxy](https://www.charlesproxy.com/). Запустите установочный файл и переместите `Charles` в папку `Applications`, Рисунок 2
 
 <div align="center">
-  <img src="./images/mac-os/i-01.png" alt="Рисунок">
+  <img src="./images/mac/i-01.png" alt="Рисунок">
   <p>Рисунок 2</p>
 </div>
 2. По окончании установки подтвердите лицензионное соглашение нажав кнопку `Agree`.
 <div align="center">
-  <img src="./images/mac-os/i-02.png" alt="Рисунок 2.1">
+  <img src="./images/mac/i-02.png" alt="Рисунок 2.1">
   <p>Рисунок 3</p>
 </div>
 3. Для автоматической настройки сетей для использования с Charles, необходимо предоставить привилегии приложению Charles Proxy Settings, для этого нужно нажать на кнопку `Grant Privileges`.
 <div align="center">
-  <img src="./images/mac-os/i-03.png" alt="Рисунок 2.1">
+  <img src="./images/mac/i-03.png" alt="Рисунок 2.1">
   <p>Рисунок 4</p>
 </div>
 4. Введите свой пароль для того чтобы Charles установил новый инструмент.
 <div align="center">
-  <img src="./images/mac-os/i-04.png" alt="Рисунок 2.1">
+  <img src="./images/mac/i-04.png" alt="Рисунок 2.1">
   <p>Рисунок 5</p>
 </div>
 
@@ -92,57 +93,65 @@ Charles Web Debugging Proxy - это инструмент мониторинга
 1. Для регистрации Charlies перейти по пути `Help` => `Enter Charles License...`, пример на рисунке 6
 
 <div align="center">
-  <img src="./images/mac-os/license-01.png" alt="Рисунок">
+  <img src="./images/mac/license-01.png" alt="Рисунок">
   <p>Рисунок 6</p>
 </div>
 
 2. В открывшемся окне ввести регистрационное имя и лицензионный ключ. Рисунок 7
 
 <div align="center">
-  <img src="./images/mac-os/license-02.png" alt="Рисунок">
+  <img src="./images/mac/license-02.png" alt="Рисунок">
   <p>Рисунок 7</p>
 </div>
 
 3. После внесения регистрационных данных, нажать на кнопку `Register`, для регистрации продукта.
 
 <div align="center">
-  <img src="./images/mac-os/license-03.png" alt="Рисунок">
+  <img src="./images/mac/license-03.png" alt="Рисунок">
   <p>Рисунок 8</p>
 </div>
 
 4. После успешной регистрации в открывшемся окне нажать `OK`, приложение будет закрыто.
 
 <div align="center">
-  <img src="./images/mac-os/license-04.png" alt="Рисунок">
+  <img src="./images/mac/license-04.png" alt="Рисунок">
   <p>Рисунок 9</p>
 </div>
 
 5. После закрытия приложения, откройте его снова. Регистрация окончена, данные о регистрации можно просмонтреть пройдя по пути `Help` => `Registered to {Registered Name}` Рисунок 10.
 
 <div align="center">
-  <img src="./images/mac-os/license-05.png" alt="Рисунок">
+  <img src="./images/mac/license-05.png" alt="Рисунок">
   <p>Рисунок 10</p>
 </div>
 
 ### **Установка сертификата**
 
+1. Для установки сертификата Charlies перейти по пути `Help` => `Install Charles Root Certificate`, пример на рисунке 11
+
 <div align="center">
-  <img src="./images/mac-os/certificate-01.png" alt="Рисунок">
+  <img src="./images/mac/certificate-01.png" alt="Рисунок">
   <p>Рисунок 11</p>
 </div>
 
+2. В открывшемся окне "Keychain Access" откройте сертификат `Charles Proxy CA`, пример на рисунке 12
+
 <div align="center">
-  <img src="./images/mac-os/certificate-02.png" alt="Рисунок">
+  <img src="./images/mac/certificate-02.png" alt="Рисунок">
   <p>Рисунок 12</p>
 </div>
 
+3. В окне сертифаката установите все разрешения в состояние `Always Trust` и закройте окно.
+
 <div align="center">
-  <img src="./images/mac-os/certificate-03.png" alt="Рисунок">
+  <img src="./images/mac/certificate-03.png" alt="Рисунок">
   <p>Рисунок 13</p>
 </div>
 
+4. Этот сертификат `Charles Proxy CA` отмечен как доверенный для этой учетной записи.
+
 <div align="center">
-  <img src="./images/mac-os/certificate-04.png" alt="Рисунок">
+  <img src="./images/mac/certificate-04.png" alt="Рисунок">
   <p>Рисунок 14</p>
 </div>
 
@@ -152,77 +161,77 @@ Charles Web Debugging Proxy - это инструмент мониторинга
 
 Web сайт - Charles Web Debugging Proxy https://www.charlesproxy.com/
 
-На Рисунке 2.1.1 окно установки Charless. По умолчанию отмечен чекбокс запуска приложения, после окончания инсталяции, остовляем его отмеченым и нажимаем установить.
+На Рисунке 15 окно установки Charless. По умолчанию отмечен чекбокс запуска приложения, после окончания инсталяции, остовляем его отмеченым и нажимаем установить.
 
  <div align="center">
-  <img src="./images/install-01.png" alt="Рисунок 2.1">
-  <p>Рисунок 2.1.1</p>
+  <img src="./images/win/install-01.png" alt="Рисунок">
+  <p>Рисунок 15</p>
 </div>
 
 ### **Первый запуск**
 
-1. При первом запуске **разрешить доступ к сетям**, в окне безопасности нажать кнопку “Разрешить” Рисунок 2.2.1
+1. При первом запуске **разрешить доступ к сетям**, в окне безопасности нажать кнопку “Разрешить” Рисунок 16
 
 <div align="center">
-  <img  src="./images/start-01.png" alt="Рисунок 3">
-  <p >Рисунок 2.2.1</p>
+  <img  src="./images/win/start-01.png" alt="Рисунок">
+  <p >Рисунок 16</p>
 </div>
 
 > **ℹ️ Информация**
 >
 > Дополнительные сертификаты нужно установить на сам ПК.
 
-2.  Для скачивания и установки перейти Help -> SSL Proxying -> Install Charles Root Certificate. Рисунок 4
+2.  Для скачивания и установки перейти Help -> SSL Proxying -> Install Charles Root Certificate. Рисунок 17
 
 <div align="center">
-  <img  src="./images/start-02.png" alt="Рисунок 4">
-  <p >Рисунок 2.2.2</p>
+  <img  src="./images/win/start-02.png" alt="Рисунок">
+  <p >Рисунок 17</p>
 </div>
 
-3. В открывшемся окне “Сертификат” нажать на кнопку “Установить сертификат…” Рисунок 5
+3. В открывшемся окне “Сертификат” нажать на кнопку “Установить сертификат…” Рисунок 18
 
 <div align="center">
-  <img  src="./images/start-04.png" alt="Рисунок 4">
-  <p >Рисунок 2.2.3</p>
+  <img  src="./images/win/start-04.png" alt="Рисунок">
+  <p >Рисунок 18</p>
 </div>
 
-4. В мастере импорта сертификатов выбрать расположение хранилища “Текущий пользователь” и нажать “Далее” Рисунок 6
+4. В мастере импорта сертификатов выбрать расположение хранилища “Текущий пользователь” и нажать “Далее” Рисунок 19
 
 <div align="center">
-  <img  src="./images/start-05.png" alt="Рисунок 4">
-  <p >Рисунок 2.2.4</p>
+  <img  src="./images/win/start-05.png" alt="Рисунок">
+  <p >Рисунок 19</p>
 </div>
-5. Выбрать хранилище сертификатов “Поместить все сертификаты в следующее хранилище” нажать “Обзор” Рисунок 7 
+5. Выбрать хранилище сертификатов “Поместить все сертификаты в следующее хранилище” нажать “Обзор” Рисунок 20
 <div align="center">
-  <img  src="./images/start-06.png" alt="Рисунок 4">
-  <p >Рисунок 2.2.5</p>
+  <img  src="./images/win/start-06.png" alt="Рисунок">
+  <p >Рисунок 20</p>
 </div>
-6. В списке выбрать хранилище “Доверенные корневые центры сертификации“, нажать “ОК” => “Далее”.    Рисунок 8
+6. В списке выбрать хранилище “Доверенные корневые центры сертификации“, нажать “ОК” => “Далее”.    Рисунок 21
 <div align="center">
-  <img  src="./images/start-07.png" alt="Рисунок 4">
-  <p >Рисунок 2.2.6</p>
+  <img  src="./images/win/start-07.png" alt="Рисунок">
+  <p >Рисунок 21</p>
 </div>
 7. В окне мастера нажать "Далее"
 <div align="center">
-  <img  src="./images/start-08.png" alt="Рисунок 4">
-  <p >Рисунок 2.2.7</p>
+  <img  src="./images/win/start-08.png" alt="Рисунок">
+  <p >Рисунок 22</p>
 </div>
-8. Для завершения работы мастера сертификатов, нажать “Готово”. Рисунок 9
+8. Для завершения работы мастера сертификатов, нажать “Готово”. Рисунок 23
 <div align="center">
-  <img  src="./images/start-09.png" alt="Рисунок 4">
-  <p >Рисунок 2.2.8</p>
+  <img  src="./images/win/start-09.png" alt="Рисунок">
+  <p >Рисунок 23</p>
 </div>
-9. Сертификат установлен нажать “ОК” => “ОК”. Рисунок 10
+9. Сертификат установлен нажать “ОК” => “ОК”. Рисунок 24
 <div align="center">
-  <img  src="./images/start-10.png" alt="Рисунок 4">
-  <p >Рисунок 2.2.9</p>
+  <img  src="./images/win/start-10.png" alt="Рисунок">
+  <p >Рисунок 24</p>
 </div>
 
 ### **Интерфейс**
 
 <div align="center">
-  <img  src="./images/i-001.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-01.png" alt="Рисунок">
+  <p >Рисунок 25</p>
 </div>
 
 - **① - Clear the current Session** — очищает историю запросов.
@@ -251,13 +260,22 @@ Web сайт - Charles Web Debugging Proxy https://www.charlesproxy.com/
 
 ### **Включение SSL Proxying**
 
+#### **Включение Proxy**
+
+Для включения перехвата запросов, нужно включить `macOS Proxy` или `Windows Proxy` соответственно, перейдя к пункту меню `Proxy`=>`macOS Proxy`
+
+ <div align="center">
+  <img src="./images/mac/img-00.png" alt="Рисунок">
+  <p>Рисунок 26</p>
+</div>
+
 #### **Focus**
 
 Для удобства работы с выбранным хостом, делаем на нем фокус — эта функция перемещает домен на первые позиции в списке. Открыть контекстное меню выбранного хоста, выбрать пункт меню “Focus”
 
 <div align="center">
-  <img  src="./images/i-002.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-02.png" alt="Рисунок">
+  <p >Рисунок 27</p>
 </div>
 
 #### **SSL Proxying**
@@ -267,8 +285,8 @@ Web сайт - Charles Web Debugging Proxy https://www.charlesproxy.com/
 Если ранее мы успешно установили SSL-сертификат, для просмотра зашифрованного трафика остается только включить SSL proxying для нужного хоста в самом Charles Proxy.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.013.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-03.png" alt="Рисунок">
+  <p >Рисунок 28</p>
 </div>
 
 #### **Дополнительный функционал**
@@ -284,8 +302,8 @@ Web сайт - Charles Web Debugging Proxy https://www.charlesproxy.com/
 a. Установить Breakpoint можно из контекстного меню запроса. После этого **все** аналогичные запросы будут перехвачены. Их можно будет просматривать и редактировать.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.014.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-04.png" alt="Рисунок">
+  <p >Рисунок 29</p>
 </div>
 
 > **ℹ️ Информация**
@@ -307,15 +325,15 @@ a. Установить Breakpoint можно из контекстного ме
 Чтобы не включать каждый хост, можно зайти в Proxy => SSL Proxying settings и на первой вкладке SSL Proxying включить Enable SSL Proxying.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.015.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-05.png" alt="Рисунок">
+  <p >Рисунок 30</p>
 </div>
 
 На вкладках Include и Exclude можно добавить или исключить конкретные хосты. Если списки на этих вкладках не заполнять, по умолчанию мы будем читать трафик со всех хостов.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.016.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-06.png" alt="Рисунок">
+  <p >Рисунок 31</p>
 </div>
 
 #### **Breakpoint Settings…**
@@ -325,36 +343,36 @@ a. Установить Breakpoint можно из контекстного ме
 - Скопировать выбранный адрес запроса
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.017.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.017.png" alt="Рисунок">
+  <p >Рисунок 32</p>
 </div>
 
 - Для перехода к настройкам, выбрать пункт меню Proxy => Breakpoint Settings… Рисунок 18
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.018.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-08.png" alt="Рисунок">
+  <p >Рисунок 33</p>
 </div>
 
 - Для включения установить чек-бокс ☑“Enable Breakpoints”
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.019.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-09.png" alt="Рисунок">
+  <p >Рисунок 34</p>
 </div>
 
 - В окне “Breakpoints Settings” Нажать на кнопку “Add” для добавления новых правил. В окне “Edit Breakpoint” вставить скопированный URL в ячейку Host
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.020.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/mac/img-10.png" alt="Рисунок">
+  <p >Рисунок 35</p>
 </div>
 
 - После вставки URL нажать на кнопку TAB для автоматического заполнения полей
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.021.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.021.png" alt="Рисунок">
+  <p >Рисунок 36</p>
 </div>
 
 - Поле Query очистить и установить чек-бокс “Response” нажать ”ОК”
@@ -364,8 +382,8 @@ a. Установить Breakpoint можно из контекстного ме
 > Устанавливать можно одновременно оба чек-бокса “Response” и ”Request”. Обработан будет только один вид, если изменить запрос, ответ не будет доступен для просмотра, если запрос не изменять, ответ будет доступен для просмотра и редактирован
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.022.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.022.png" alt="Рисунок">
+  <p >Рисунок 37</p>
 </div>
 
 - Новое правило добавлено, для сохранения выбранных параметров в окне “Breakpoints Settings” нажать на кнопку “ОК”
@@ -375,8 +393,8 @@ a. Установить Breakpoint можно из контекстного ме
 > В “Breakpoints Settings” можно добавлять разные правила для разных страниц. Каждое правило можно отключить не зависимо от других
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.023.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.023.png" alt="Рисунок">
+  <p >Рисунок 38</p>
 </div>
 
 > **⚠️ Внимание**
@@ -386,8 +404,8 @@ a. Установить Breakpoint можно из контекстного ме
 - Пример редактирования ответа
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.024.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.024.png" alt="Рисунок">
+  <p >Рисунок 39</p>
 </div>
 
 Пример редактирования запроса на вкладке **Breakpoints**
@@ -401,8 +419,8 @@ a. Установить Breakpoint можно из контекстного ме
 Пример ответа после редактирования
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.025.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.025.png" alt="Рисунок">
+  <p >Рисунок 40</p>
 </div>
 
 > **ℹ️ Информация**
@@ -416,13 +434,13 @@ a. Установить Breakpoint можно из контекстного ме
 Перейдем в **Proxy** → **Throttle Settings** → галочка **Enable Throttling**. Если не разбираетесь во всех перечисленных пунктах, то можете использовать Throttle preset и там выбрать подходящую для теста скорость, а система автоматически заполнит остальные поля.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.026.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.026.png" alt="Рисунок">
+  <p >Рисунок 41</p>
 </div>
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.027.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.027.png" alt="Рисунок">
+  <p >Рисунок 42</p>
 </div>
 
 #### **Reverse Proxies**
@@ -446,15 +464,15 @@ a. Установить Breakpoint можно из контекстного ме
 - Для настройки Map Local перейти Tools => Map local…
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.028.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.028.png" alt="Рисунок">
+  <p >Рисунок 43</p>
 </div>
 
 - Для включения Map Location, в окне Map Local Settings установить чек-бокс ☑ **Enable Map Local**
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.029.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.029.png" alt="Рисунок">
+  <p >Рисунок 44</p>
 </div>
 
 > **⚠️ Внимание**
@@ -469,8 +487,8 @@ a. Установить Breakpoint можно из контекстного ме
   - Нажать кнопку “ОК” для сохранения параметров
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.030.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.030.png" alt="Рисунок">
+  <p >Рисунок 45</p>
 </div>
 
 #### **Rewrite**
@@ -480,8 +498,8 @@ a. Установить Breakpoint можно из контекстного ме
 Для включения и создания правил открыть **Tools** → **Rewrite** → галочка «**Enable Rewrite**» → **Add**. В поле **Name** можно ввести любое название подмены, либо оставить по умолчанию «Untitled Set».
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.031.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.031.png" alt="Рисунок">
+  <p >Рисунок 46</p>
 </div>
 
 Следующим шагом необходимо добавить в «Location» путь запроса. Для этого, в разделе **Location** → **Add** заполните следующие поля и сохраните:\
@@ -489,8 +507,8 @@ a. Установить Breakpoint можно из контекстного ме
 **Path:**
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.032.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.032.png" alt="Рисунок">
+  <p >Рисунок 47</p>
 </div>
 
 После того, как добавили путь запроса, необходимо изменить сам параметр и его значение. Для этого нужно создать **Rewrite Rule**:
@@ -510,12 +528,12 @@ a. Установить Breakpoint можно из контекстного ме
 > Если поле Value в разделе Match оставить пустым, то весь ответ будет заменен на значение поля Value в разделе Replace
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.033.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.033.png" alt="Рисунок">
+  <p >Рисунок 48</p>
 </div>
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.034.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.034.png" alt="Рисунок">
+  <p >Рисунок 49</p>
 </div>
 
 #### **Map Remote**
@@ -523,8 +541,8 @@ a. Установить Breakpoint можно из контекстного ме
 **Map Remote** — позволяет переадресовать запросы с одного URL «Map From» на другой «Map To». Подменяет хост, путь целиком или только параметры в зависимости от вашей задачи. В примере ниже подменён запрос с prod-сервера на dev-сервер.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.035.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.035.png" alt="Рисунок">
+  <p >Рисунок 50</p>
 </div>
 
 #### **Block List**
@@ -536,8 +554,8 @@ a. Установить Breakpoint можно из контекстного ме
 Инструмент **No Caching** предотвращает кэширование, манипулируя заголовками HTTP, которые управляют кэшированием ответов. Заголовки If-Modified-Since и If-None-Match удаляются из запросов, добавляются Pragma: no-cache и Cache-control: no-cache. Заголовки Expires, Last-Modified и ETag удаляются из ответов и добавляются Expires: 0 и Cache-Control: no-cache.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.036.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.036.png" alt="Рисунок">
+  <p >Рисунок 51</p>
 </div>
 
 #### **Block Cookies**
@@ -545,8 +563,8 @@ a. Установить Breakpoint можно из контекстного ме
 **Block Cookies** — заголовок файла Cookie удаляется из запросов, предотвращая отправку значений файла из клиентского приложения (например веб-браузер) на удаленный сервер. А также из ответов удаляется заголовок Set-Cookie, предотвращая получение клиентским приложением запросов на установку файлов cookie с удаленного сервера. В настройках можно включить удаление Cookie как для всех хостов, так и для выбранных. В примере ниже включено удаление Cookie для всех запросов.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.037.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.037.png" alt="Рисунок">
+  <p >Рисунок 52</p>
 </div>
 
 #### **DNS Spoofing**
@@ -574,22 +592,22 @@ a. Установить Breakpoint можно из контекстного ме
 Во вкладке «Options» можно настроить лимит, то есть количество запросов, которое Charles Proxy может записать.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.038.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.038.png" alt="Рисунок">
+  <p >Рисунок 53</p>
 </div>
 
 Во вкладке «Include» можно выбрать конкретный домен для отображения пакетов.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.039.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.039.png" alt="Рисунок">
+  <p >Рисунок 54</p>
 </div>
 
 Во вкладке «Exclude» можем выбрать те домены, которые необходимо спрятать при сниффинге.
 
 <div align="center">
-  <img  src="./images/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.040.png" alt="Рисунок 4">
-  <p >Рисунок -</p>
+  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.040.png" alt="Рисунок">
+  <p >Рисунок 55</p>
 </div>
 
 ## **Резюме**

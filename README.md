@@ -11,4 +11,3 @@
 - ### [Oh My Posh](./oh-my-posh/oh-my-posh.md)
 
 - ### [VS Code](./vs-code/vs-code.md)
-- ### Postman

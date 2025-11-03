@@ -343,7 +343,7 @@ a. Установить Breakpoint можно из контекстного ме
 - Скопировать выбранный адрес запроса
 
 <div align="center">
-  <img  src="./images/win/Aspose.Words.f0c8c9ab-c3d1-4b58-92c5-836c6caac9ca.017.png" alt="Рисунок">
+  <img  src="./images/mac/img-11.png" alt="Рисунок">
   <p >Рисунок 32</p>
 </div>
 
